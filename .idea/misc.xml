@@ -10,13 +10,16 @@
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/ic_tabbar_cart_off.xml" value="0.1485" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/ic_tabbar_cart_on.xml" value="0.1485" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/main_icon.xml" value="0.1485" />
+        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/selected_viewpager_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/selector_viewpager_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/unselected_viewpager_indicator.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/activity_product_detail.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/fragment_cart.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/fragment_category.xml" value="0.12291666666666666" />
-        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/fragment_home.xml" value="0.15" />
+        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/fragment_product_detail.xml" value="0.20574162679425836" />
-        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/item_home_banner.xml" value="0.33" />
+        <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/layout/item_home_banner.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/menu/navigation_main_menu.xml" value="0.2546875" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
