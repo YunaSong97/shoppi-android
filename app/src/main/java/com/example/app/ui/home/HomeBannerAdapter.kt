@@ -1,4 +1,4 @@
-package com.example.app
+package com.example.app.ui.home
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,6 +10,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app.model.Banner
+import com.example.app.GlideApp
+import com.example.app.R
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 

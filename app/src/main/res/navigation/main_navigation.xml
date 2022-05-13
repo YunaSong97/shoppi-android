@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.app.HomeFragment"
+        android:name="com.example.app.ui.home.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_home_to_product_detail"
@@ -22,6 +22,6 @@
         android:label="CategoryFragment" />
     <fragment
         android:id="@+id/navigation_product_detail"
-        android:name="com.example.app.ProductDetailFragment"
+        android:name="com.example.app.ui.ProductDetailFragment"
         android:label="ProductDetailFragment" />
 </navigation>
