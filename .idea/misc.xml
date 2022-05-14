@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ONE/Desktop/shoppi-android/shoppi-android/app/src/main/res/layout/activity_main.xml" value="0.12715298885511653" />
+        <entry key="..\:/Users/ONE/Desktop/shoppi-android/shoppi-android/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/ONE/Desktop/shoppi-android/shoppi-android/app/src/main/res/layout/fragment_product_detail.xml" value="0.12715298885511653" />
+        <entry key="..\:/Users/ONE/Desktop/shoppi-android/shoppi-android/app/src/main/res/layout/item_home_banner.xml" value="0.33" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/background_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/background_white.xml" value="0.1" />
         <entry key="..\:/Users/unme9/AndroidStudioProjects/shoppi-android/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.1" />
