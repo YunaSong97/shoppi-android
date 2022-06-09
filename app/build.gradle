@@ -28,9 +28,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
     dataBinding {
         enabled = true
     }
@@ -48,6 +50,7 @@ dependencies {
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
 
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:30.0.1')

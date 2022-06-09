@@ -1,8 +1,6 @@
-package com.example.app.repository
+package com.example.app.repository.category
 
 import com.example.app.model.Category
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class CategoryRepository(
     private val remoteDataSource: CategoryRemoteDataSource
