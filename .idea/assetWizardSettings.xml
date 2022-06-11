@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_tabbar_home_on" />
-                            <entry key="sourceFile" value="C:\Users\ONE\Desktop\assets_bottom_navigation\ic_tabbar_home_on.svg" />
+                            <entry key="outputName" value="ic_selected_on" />
+                            <entry key="sourceFile" value="C:\Users\unme9\Downloads\assets_cart\assets_cart\ic_selected_on.svg" />
                           </map>
                         </option>
                       </PersistentState>

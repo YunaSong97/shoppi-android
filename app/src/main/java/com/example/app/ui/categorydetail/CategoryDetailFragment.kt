@@ -7,13 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ConcatAdapter
-import com.example.app.common.KEY_CATEGORY_ID
 import com.example.app.common.KEY_CATEGORY_LABEL
-import com.example.app.databinding.FragmentCategoryBinding
 import com.example.app.databinding.FragmentCategoryDetailBinding
+import com.example.app.ui.common.ProductClickListener
+import com.example.app.ui.common.PromotionAdapter
+import com.example.app.ui.common.SectionTitleAdapter
 import com.example.app.ui.common.ViewModelFactory
 
-class CategoryDetailFragment : Fragment() {
+class CategoryDetailFragment : Fragment(), ProductClickListener {
     private lateinit var binding: FragmentCategoryDetailBinding
     private val viewModel: CategoryDetailViewModel by viewModels { ViewModelFactory(requireContext()) }
 
@@ -41,8 +42,8 @@ class CategoryDetailFragment : Fragment() {
 
     private fun setListAdapter() {
         val topSellingSectionAdapter = CategoryTopSellingSectionAdapter()
-        val titleAdapter = CategorySectionTitleAdapter()
-        val promotionAdapter = CategoryPromotionAdapter()
+        val titleAdapter = SectionTitleAdapter()
+        val promotionAdapter = PromotionAdapter(this)
 
         binding.rvCategoryDetail.adapter =
             ConcatAdapter(topSellingSectionAdapter, titleAdapter, promotionAdapter)
@@ -54,5 +55,10 @@ class CategoryDetailFragment : Fragment() {
             titleAdapter.submitList(listOf(promotions.title))
             promotionAdapter.submitList(promotions.items)
         }
+    }
+
+    // ProductClickListener
+    override fun onProductClick(productId: String) {
+        TODO("Not yet implemented")
     }
 }

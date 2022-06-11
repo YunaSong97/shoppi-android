@@ -13,6 +13,12 @@
     <!--    Navigation  -->
     <string name="label_category">카테고리</string>
     <string name="label_home_icon">홈</string>
-    <string name="label_cart_icon">장바구니</string>
+    <string name="label_cart">장바구니</string>
     <string name="label_category_new">NEW</string>
+    <string name="label_product_discount_price">쿠폰 적용가</string>
+    <string name="label_add_cart">장바구니 담기</string>
+    <string name="label_order_product">선택한 상품 주문하기</string>
+    <string name="description_cart_item_thumbnail">장바구니 아이템</string>
+    <string name="description_btn_plus_cart_item">아이템 개수 증가 버튼</string>
+    <string name="description_btn_minus_cart_item">아이템 개수 감소 버튼</string>
 </resources>

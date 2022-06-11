@@ -4,19 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.viewpager2.widget.ViewPager2
-import com.example.app.GlideApp
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.ConcatAdapter
 import com.example.app.R
+import com.example.app.common.KEY_PRODUCT_ID
 import com.example.app.databinding.FragmentHomeBinding
-import com.example.app.ui.common.ViewModelFactory
-import com.google.android.material.tabs.TabLayout
+import com.example.app.ui.common.*
 import com.google.android.material.tabs.TabLayoutMediator
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ProductClickListener {
 
     private val viewModel: HomeViewModel by viewModels { ViewModelFactory(requireContext()) }
     private lateinit var binding: FragmentHomeBinding
@@ -35,7 +34,19 @@ class HomeFragment : Fragment() {
 
         binding.lifecycleOwner = viewLifecycleOwner
         setToolbar()
+        setNavigation()
         setTopBanners()
+        setListAdapter()
+    }
+
+    private fun setNavigation() {
+        viewModel.openProductEvent.observe(viewLifecycleOwner, EventObserver { productId ->
+            findNavController().navigate(
+                R.id.action_home_to_product_detail, bundleOf(
+                    KEY_PRODUCT_ID to productId
+                )
+            )
+        })
     }
 
     private fun setToolbar() {
@@ -46,7 +57,7 @@ class HomeFragment : Fragment() {
 
     private fun setTopBanners() {
         with(binding.viewpagerHomeBanner) {
-            adapter = HomeBannerAdapter().apply {
+            adapter = HomeBannerAdapter(viewModel).apply {
                 viewModel.topBanners.observe(viewLifecycleOwner) { banners ->
                     submitList(banners)
                 }
@@ -65,5 +76,23 @@ class HomeFragment : Fragment() {
 
             }.attach()
         }
+    }
+
+    private fun setListAdapter() {
+        val titleAdapter = SectionTitleAdapter()
+        val promotionAdapter = PromotionAdapter(this)
+
+        binding.rvHomePromotions.adapter = ConcatAdapter(titleAdapter, promotionAdapter)
+        viewModel.promotions.observe(viewLifecycleOwner) { promotions ->
+            titleAdapter.submitList(listOf(promotions.title))
+            promotionAdapter.submitList(promotions.items)
+        }
+    }
+
+    // ProductClickListener
+    override fun onProductClick(productId: String) {
+        findNavController().navigate(R.id.action_home_to_product_detail, bundleOf(
+            KEY_PRODUCT_ID to productId
+        ))
     }
 }
